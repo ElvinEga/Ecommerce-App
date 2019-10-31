@@ -13,6 +13,7 @@ import java.util.*
 import com.google.gson.reflect.TypeToken
 import com.twisac.apps.amazin.adapters.HeaderAdapter
 import com.twisac.apps.amazin.adapters.HomeAdapter
+import com.twisac.apps.amazin.component.AlertPopup
 import com.twisac.apps.amazin.models.Product
 import com.twisac.apps.amazin.models.Slide
 import java.io.IOException
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Tint top white
+        AlertPopup().statusBarTint(this@MainActivity)
         //top bar
         setupCollopsinBar()
 

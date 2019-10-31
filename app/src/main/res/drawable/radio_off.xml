@@ -8,6 +8,6 @@
         android:width="1dp"
         android:color="@color/textHint" />
 
-    <corners android:radius="20dp" />
+    <corners android:radius="100dp" />
 
 </shape>

@@ -2,13 +2,16 @@ package com.twisac.apps.amazin.adapters;
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.support.annotation.LayoutRes
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import com.twisac.apps.amazin.ProductActivity
 import com.twisac.apps.amazin.R
 import com.twisac.apps.amazin.models.Product
 import kotlinx.android.synthetic.main.item_product.view.*
@@ -27,6 +30,7 @@ class HomeAdapter(internal var context: Context, private val mHeaders: MutableLi
         var iv_thumbnail: ImageView = v.iv_thumbnail
         var tv_name: TextView = v.tv_name
         var tv_price : TextView = v.tv_price
+        var ll_layout: LinearLayout = v.ll_layout
        // var rb_rating: RatingBar = v.rb_rating
 
 
@@ -44,6 +48,16 @@ class HomeAdapter(internal var context: Context, private val mHeaders: MutableLi
 
             val res = context.resources.getIdentifier(header.image, "drawable", context.packageName)
             iv_thumbnail.setImageResource(res)
+            ll_layout.setOnClickListener {
+                val intent = Intent(context, ProductActivity::class.java)
+                intent.putExtra("name",header.name)
+                intent.putExtra("id",header.id)
+                intent.putExtra("price",header.price)
+                intent.putExtra("image",header.image)
+                intent.putExtra("description",header.description)
+                intent .flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                context.startActivity(intent)
+            }
         }
 
 

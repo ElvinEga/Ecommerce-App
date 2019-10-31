@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class ApiClient {
-    private static final String BASE_URL= "http://amazin.twisacdevelopers.com";
+    private static final String BASE_URL= "http://timeapp.twisacdevelopers.com";
     private static Retrofit retrofit = null;
 
 

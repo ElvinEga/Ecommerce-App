@@ -73,7 +73,7 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(intent)
         } else {
 
-            val intent2 = Intent(this@SplashScreenActivity, QuizActivity::class.java)
+            val intent2 = Intent(this@SplashScreenActivity, WelcomeActivity::class.java)
             startActivity(intent2)
         }
 

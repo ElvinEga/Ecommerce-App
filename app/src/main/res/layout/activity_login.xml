@@ -26,7 +26,7 @@
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="340dp"
+            android:layout_height="320dp"
             android:layout_centerInParent="true"
             app:srcCompat="@drawable/login_page"/>
         <TextView
@@ -51,21 +51,21 @@
             android:gravity="center_horizontal">
 
             <android.support.design.button.MaterialButton
-                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:id="@+id/btn_log_in"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
+                android:layout_height="wrap_content"
                 android:text="Log In"
                 android:textAllCaps="false"
                 android:textSize="@dimen/txt22"
-                app:backgroundTint="@color/colorPrimary"
                 android:textColor="@color/colorSecondary"
                 />
             <android.support.design.button.MaterialButton
                 style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
                 android:id="@+id/btn_sign_up"
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
+                android:layout_height="50dp"
                 android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textSize="@dimen/txt16"

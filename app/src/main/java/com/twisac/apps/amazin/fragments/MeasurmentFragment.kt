@@ -22,9 +22,6 @@ class MeasurmentFragment : Fragment()
 
 {
     private var position =0
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -55,9 +52,16 @@ class MeasurmentFragment : Fragment()
                                     .setConfirmText("OK")
                                     .setConfirmClickListener {
                                         val intent = Intent(context, MainActivity::class.java)
-                                        startActivity(intent)
-                                        successAlert.dismiss()
+                                        // Closing all the Activities
+                                        intent .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
+                                        // Add new Flag to start new Activity
+                                        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+
+                                        successAlert.dismiss()
+                                       startActivity(intent)
+
+                                        activity!!.finish()
                                     }
                                     .show()
                         } catch (ex: WindowManager.BadTokenException) {
