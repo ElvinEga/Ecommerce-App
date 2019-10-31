@@ -69,7 +69,7 @@ class SplashScreenActivity : AppCompatActivity() {
         val sessionManager = SessionManager(this@SplashScreenActivity)
         if (sessionManager.isLoggedIn) {
 
-            val intent = Intent(this@SplashScreenActivity, QuizActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, WelcomeActivity::class.java)
             startActivity(intent)
         } else {
 

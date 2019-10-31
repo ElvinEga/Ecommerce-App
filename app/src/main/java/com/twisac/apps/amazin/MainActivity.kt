@@ -1,5 +1,6 @@
 package com.twisac.apps.amazin
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.AppBarLayout
@@ -32,7 +33,11 @@ class MainActivity : AppCompatActivity() {
 
         //recycler view
         setupRecyclerView()
-
+       fab_cart.setOnClickListener {
+            //go to cart
+            val intent = Intent(this@MainActivity, CartActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupCollopsinBar() {

@@ -65,7 +65,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
                 android:id="@+id/btn_sign_up"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="56dp"
                 android:text="Sign Up"
                 android:textAllCaps="false"
                 android:textSize="@dimen/txt16"

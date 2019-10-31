@@ -104,7 +104,7 @@ public class WelcomeActivity extends AppCompatActivity {
      //   prefManager.setFirstTimeLaunch(false);
         SessionManager sessionManager =  new SessionManager(this);
         if(sessionManager.isLoggedIn()) {
-            startActivity(new Intent(WelcomeActivity.this, QuizActivity.class));
+            startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
             finish();
         }else {
             startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));

@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CartActivity">
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_expense"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ic_round_chevron_left_24px"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
 
-</android.support.constraint.ConstraintLayout>
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ll_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_error"/>
+                <TextView
+                    android:id="@+id/listview_empty_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textHint"
+                    android:text="Cart is Empty \n Please add Products to cart"
+                    android:textSize="21sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
