@@ -39,7 +39,7 @@
                     android:textSize="18sp"
                     android:gravity="center"/>
             <android.support.v7.widget.AppCompatImageView
-                    android:id="@+id/iv_add"
+                    android:id="@+id/iv_cart"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"

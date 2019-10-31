@@ -1,5 +1,6 @@
 package com.twisac.apps.amazin
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_product.*
@@ -29,6 +30,17 @@ class ProductActivity : AppCompatActivity() {
         tv_name.text =name
         tv_price.text ="Ksh ${price.toString()}"
         tv_description.text =description
+
+        iv_back.setOnClickListener {
+            //go back
+            super.onBackPressed()
+        }
+        iv_cart.setOnClickListener {
+            //go to cart
+            val intent = Intent(this@ProductActivity, CartActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
 
     }
 }
