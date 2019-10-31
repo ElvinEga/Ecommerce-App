@@ -11,13 +11,15 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import com.twisac.apps.amazin.QuizActivity
 import com.twisac.apps.amazin.R
+import com.twisac.apps.amazin.interfaces.IReloadContrib
 import com.twisac.apps.amazin.models.Choice
 import kotlinx.android.synthetic.main.item_choice.view.*
 
 
 
-class ChoiceAdapter(internal var context: Context, private val mChoices: MutableList<Choice>)
+class ChoiceAdapter(internal var context: Context, private val mChoices: MutableList<Choice>, private var reloadContrib: IReloadContrib)
     : RecyclerView.Adapter<ChoiceAdapter.ViewHolder>() {
     fun clear() {
         mChoices.clear()
@@ -47,9 +49,11 @@ class ChoiceAdapter(internal var context: Context, private val mChoices: Mutable
             if (mChoices[position].checked){
                 holder.rl_layout.setBackgroundColor(rainbow[17])
                 mChoices[position].checked= false
+                reloadContrib.reload(-1)
             }else {
                 holder.rl_layout.setBackgroundColor(rainbow[18])
                 mChoices[position].checked = true
+                reloadContrib.reload(+1)
             }
 
         }

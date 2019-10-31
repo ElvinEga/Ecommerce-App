@@ -104,7 +104,7 @@
                                 android:drawableStart="@drawable/ic_outline_phone"
                                 android:drawablePadding="10dp"
                                 android:singleLine="true"
-                                android:hint="Phone"
+                                android:hint="Phone (07XXXXXXXX)"
                                 android:textColor="@color/textLabel"
                                 android:textColorHint="@color/textHint"
                                 android:id="@+id/editText_phone" />

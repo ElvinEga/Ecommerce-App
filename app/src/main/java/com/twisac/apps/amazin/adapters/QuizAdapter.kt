@@ -11,12 +11,14 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import com.twisac.apps.amazin.QuizActivity
 import com.twisac.apps.amazin.R
+import com.twisac.apps.amazin.interfaces.IReloadContrib
 import com.twisac.apps.amazin.models.Choice
 import kotlinx.android.synthetic.main.item_quiz.view.*
 
 
-class QuizAdapter(internal var context: Context, private val mChoices: MutableList<Choice>)
+class QuizAdapter(internal var context: Context, private val mChoices: MutableList<Choice>,private var reloadContrib: IReloadContrib)
     : RecyclerView.Adapter<QuizAdapter.ViewHolder>() {
     fun clear() {
         mChoices.clear()
@@ -43,10 +45,12 @@ class QuizAdapter(internal var context: Context, private val mChoices: MutableLi
             if (mChoices[position].checked){
                 holder.iv_selected.visibility= View.INVISIBLE
                 mChoices[position].checked= false
+                reloadContrib.reload(-1)
             }else {
 
                 holder.iv_selected.visibility= View.VISIBLE
                 mChoices[position].checked = true
+                reloadContrib.reload(+1)
             }
 
         }

@@ -52,7 +52,7 @@ class QuizActivity : AppCompatActivity() {
                         fm.beginTransaction().attach(fragment2).commit()
                         fm.beginTransaction().hide(active).show(fragment2).commit()
                         active = fragment2
-                        showFab()
+                       // showFab()
                     }
                     2 -> {
                         hideFab()
@@ -61,9 +61,10 @@ class QuizActivity : AppCompatActivity() {
                         fm.beginTransaction().attach(fragment3).commit()
                         fm.beginTransaction().hide(active).show(fragment3).commit()
                         active = fragment3
-                        showFab()
+                     //   showFab()
                     }
-                    3 -> { hideFab()
+                    3 -> {
+                        hideFab()
                         fm.beginTransaction().detach(fragment3).commit()
                         fm.beginTransaction().detach(fragment4).commit()
                         fm.beginTransaction().attach(fragment4).commit()
@@ -90,11 +91,14 @@ class QuizActivity : AppCompatActivity() {
 
         Handler().postDelayed({ doubleBackToExitPressedOnce = false }, 2000)
     }
-fun showFab(){
+    fun showFab(){
     fab_next.visibility = View.VISIBLE
-}
+    }
     fun hideFab(){
         fab_next.visibility = View.GONE
+    }
+    fun goNext(){
+fab_next.performClick()
     }
 
 }

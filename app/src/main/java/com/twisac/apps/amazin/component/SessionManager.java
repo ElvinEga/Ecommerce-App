@@ -37,6 +37,7 @@ public class SessionManager {
     public static final String KEY_ROLE = "role";
     public static final String KEY_NAME = "name";
     public static final String KEY_TOKEN = "token";
+    public static final String KEY_GENDER = "gender";
 
 
 
@@ -64,6 +65,11 @@ public class SessionManager {
         // Storing token in pref
         editor.putString(KEY_TOKEN, token);
 
+        // commit changes
+        editor.commit();
+    }
+    public void createGenderSession(String gender){
+        editor.putString(KEY_GENDER,gender);
         // commit changes
         editor.commit();
     }
@@ -108,6 +114,9 @@ public class SessionManager {
 
         // session token
         user.put(KEY_TOKEN, pref.getString(KEY_TOKEN, null));
+
+        //session gender
+        user.put(KEY_GENDER, pref.getString(KEY_GENDER, null));
 
 
         // return user

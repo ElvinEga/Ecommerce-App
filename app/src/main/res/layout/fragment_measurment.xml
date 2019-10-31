@@ -99,10 +99,11 @@
                                 android:layout_height="wrap_content"
                                 android:drawableStart="@drawable/ic_outline_info_24dp"
                                 android:maxLines="1"
+                                android:inputType="number"
                                 android:textColor="@color/textLabel"
                                 android:textColorHint="@color/textHint"
                                 android:hint="Neck size"
-                                android:id="@+id/editText_neck" />
+                                android:id="@+id/et_neck" />
                         </android.support.design.widget.TextInputLayout>
                         <android.support.design.widget.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -112,10 +113,12 @@
                             android:layout_marginTop="10dp"
                             android:textColorHint="@color/textHint">
                             <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_arm"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:drawableStart="@drawable/ic_outline_info_24dp"
                                 android:maxLines="1"
+                                android:inputType="number"
                                 android:textColor="@color/textLabel"
                                 android:textColorHint="@color/textHint"
                                 android:hint="Arm length"/>
@@ -133,42 +136,62 @@
                     android:text="Select Size"
                     android:textSize="18sp" />
                 <RadioGroup
+                    android:id="@+id/rg_size"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
                     <RadioButton
-                        android:layout_width="88dp"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_xs"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:button="@null"
-                        android:padding="8dp"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/textLabelDark"
+                        android:gravity="center"
+                        android:background="@drawable/radio_states"
+                        android:text="XS"/>
+                    <RadioButton
+                        android:id="@+id/rb_s"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:button="@null"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
                         android:textColor="@color/textLabelDark"
                         android:gravity="center"
                         android:background="@drawable/radio_states"
                         android:text="S"/>
                     <RadioButton
-                        android:layout_width="88dp"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_m"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:button="@null"
                         android:padding="10dp"
+                        android:layout_margin="10dp"
                         android:textColor="@color/textLabelDark"
                         android:gravity="center"
                         android:background="@drawable/radio_states"
                         android:text="M"/>
                     <RadioButton
-                        android:layout_width="88dp"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_l"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:button="@null"
                         android:padding="10dp"
+                        android:layout_margin="10dp"
                         android:textColor="@color/textLabelDark"
                         android:gravity="center"
                         android:background="@drawable/radio_states"
                         android:text="L"/>
                     <RadioButton
-                        android:layout_width="88dp"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_xl"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         android:button="@null"
                         android:padding="10dp"
+                        android:layout_margin="10dp"
                         android:textColor="@color/textLabelDark"
                         android:gravity="center"
                         android:background="@drawable/radio_states"
@@ -265,37 +288,51 @@
                         android:gravity="center"
                         android:orientation="horizontal">
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
-                            android:padding="8dp"
+                            android:padding="10dp"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/textLabelDark"
+                            android:gravity="center"
+                            android:background="@drawable/radio_states"
+                            android:text="XS"/>
+                        <RadioButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:button="@null"
+                            android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
                             android:text="S"/>
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
                             android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
                             android:text="M"/>
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
                             android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
                             android:text="L"/>
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
                             android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
@@ -307,7 +344,6 @@
                     android:id="@+id/ll_shoe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
                     android:orientation="vertical"
                     >
                     <TextView
@@ -338,37 +374,51 @@
                         android:gravity="center"
                         android:orientation="horizontal">
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
-                            android:padding="8dp"
+                            android:padding="10dp"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/textLabelDark"
+                            android:gravity="center"
+                            android:background="@drawable/radio_states"
+                            android:text="XS"/>
+                        <RadioButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:button="@null"
+                            android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
                             android:text="S"/>
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
                             android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
                             android:text="M"/>
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
                             android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"
                             android:text="L"/>
                         <RadioButton
-                            android:layout_width="88dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:button="@null"
                             android:padding="10dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/textLabelDark"
                             android:gravity="center"
                             android:background="@drawable/radio_states"

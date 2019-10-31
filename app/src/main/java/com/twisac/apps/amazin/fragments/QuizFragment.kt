@@ -14,6 +14,8 @@ import com.google.gson.reflect.TypeToken
 import com.twisac.apps.amazin.QuizActivity
 import com.twisac.apps.amazin.R
 import com.twisac.apps.amazin.adapters.QuizAdapter
+import com.twisac.apps.amazin.component.AlertPopup
+import com.twisac.apps.amazin.interfaces.IReloadContrib
 import com.twisac.apps.amazin.models.Choice
 import kotlinx.android.synthetic.main.fragment_quiz.view.*
 import java.io.IOException
@@ -22,10 +24,10 @@ import java.io.IOException
 /**
  * A simple [Fragment] subclass.
  */
-class QuizFragment : Fragment()
+class QuizFragment : Fragment(), IReloadContrib
 
 {
-
+    private var countCoice = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -39,7 +41,7 @@ class QuizFragment : Fragment()
         val listType = object : TypeToken<List<Choice>>() {}.type
         choiceList = gson.fromJson<MutableList<Choice>>(loadJSONFromAsset("quiz.json"), listType)
 
-        val quizAdapter = QuizAdapter(activity!!.applicationContext, choiceList)
+        val quizAdapter = QuizAdapter(activity!!.applicationContext, choiceList,this)
         rootView.rv_quiz.setHasFixedSize(true)
         rootView.rv_quiz.layoutManager =  ( LinearLayoutManager(activity!!.applicationContext))
         val animationController2 = AnimationUtils.loadLayoutAnimation(activity, R.anim.layout_slide_from_bottom)
@@ -49,6 +51,19 @@ class QuizFragment : Fragment()
         quizAdapter.notifyDataSetChanged()
         rootView.rv_quiz.scheduleLayoutAnimation()
       //  (activity as QuizActivity).showFab()
+
+        rootView.fab_done.setOnClickListener {
+            if(countCoice!=0){
+                (activity as QuizActivity).showFab()
+                (activity as QuizActivity).goNext()
+            }else
+            {
+                AlertPopup().alertError(activity!!,"No Selection","Please select 1 or more choices")
+
+            }
+
+
+        }
         return  rootView
 
     }
@@ -72,5 +87,8 @@ class QuizFragment : Fragment()
 
     }
 
+    override fun reload(count: Int) {
+        countCoice += count
+    }
 }// Required empty public constructor
 
