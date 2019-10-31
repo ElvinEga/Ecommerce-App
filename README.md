@@ -1,9 +1,8 @@
 
-# Time App
+# Ecommerce App
 
 
 Intro
 ------
-
-Time App for the future
+This Ecommerce app was developed using kotlin. To run ensure to install all dependancies.
 =======
