@@ -19,13 +19,6 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-
-        val animation = AnimationUtils.loadAnimation(this,R.anim.move_up)
-        iv_logo.animation = animation
-
-        val animation2 = AnimationUtils.loadAnimation(this,R.anim.blink)
-        tv_title.animation = animation2
-
         object : CountDownTimer(COUNTEND.toLong(), COUNSTART.toLong()) {
             /**
              * This method simply is called when the millisecond counter finishes to run.

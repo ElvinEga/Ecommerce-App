@@ -5,7 +5,11 @@
     android:layout_height="match_parent"
     android:id="@+id/content"
     android:background="@color/colorPrimary">
-
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/plants_bg" />
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/iv_logo"
         android:layout_width="120dp"
@@ -19,14 +23,13 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/iv_logo"
         android:layout_centerHorizontal="true"
         android:text="@string/app_name"
         android:textColor="@color/white"
-
         android:textSize="42sp"
-        android:typeface="normal" />
+        android:textStyle="bold"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

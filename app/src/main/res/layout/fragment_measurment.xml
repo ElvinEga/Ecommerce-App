@@ -249,6 +249,7 @@
                                         android:layout_height="wrap_content"
                                         android:drawableStart="@drawable/ic_outline_info_24dp"
                                         android:maxLines="1"
+                                        android:inputType="number"
                                         android:textColor="@color/textLabel"
                                         android:textColorHint="@color/textHint"
                                         android:hint="Waist Size"
@@ -266,6 +267,7 @@
                                         android:layout_height="wrap_content"
                                         android:drawableStart="@drawable/ic_outline_info_24dp"
                                         android:maxLines="1"
+                                        android:inputType="number"
                                         android:textColor="@color/textLabel"
                                         android:textColorHint="@color/textHint"
                                         android:hint="Inseam"/>
