@@ -1,0 +1,97 @@
+[
+  {
+    "id":1,
+    "name":"Casual",
+    "drawable":"ic_undraw_casual",
+    "isChecked":false
+
+  },
+  {
+    "id":2,
+    "name":"Comfortable",
+    "drawable":"ic_undraw_comfortable",
+    "isChecked":false
+
+  },
+  {
+    "id":3,
+    "name":"Simple",
+    "drawable":"ic_undraw_simple",
+    "isChecked":false
+
+  },
+  {
+    "id":4,
+    "name":"Professional",
+    "drawable":"ic_undraw_professional",
+    "isChecked":false
+  },
+  {
+    "id":5,
+    "name":"Refined",
+    "drawable":"ic_undraw_refined",
+    "isChecked":false
+  },
+  {
+    "id":6,
+    "name":"Sophisticated",
+    "drawable":"ic_undraw_sophisticated",
+    "isChecked":false
+  },
+  {
+    "id":7,
+    "name":"Eclectic",
+    "drawable":"ic_undraw_eclectic",
+    "isChecked":false
+  },
+  {
+    "id":8,
+    "name":"Unconventional",
+    "drawable":"ic_undraw_unconventional",
+    "isChecked":false
+  },
+  {
+    "id":9,
+    "name":"Unique",
+    "drawable":"ic_undraw_unique",
+    "isChecked":false
+  },
+  {
+    "id": 10,
+    "name": "Bold",
+    "drawable": "ic_undraw_bold",
+    "isChecked": false
+  },
+  {
+    "id":11,
+    "name":"Striking",
+    "drawable":"ic_undraw_striking",
+    "isChecked":false
+  },
+  {
+    "id":12,
+    "name":"Attention Grabbing",
+    "drawable":"ic_undraw_grabbing",
+    "isChecked":false
+  },
+  {
+    "id":13,
+    "name":"Gentle",
+    "drawable":"ic_undraw_gentle",
+    "isChecked":false
+  },
+  {
+    "id":14,
+    "name":"Soft",
+    "drawable":"ic_undraw_soft",
+    "isChecked":false
+
+  },
+  {
+    "id":15,
+    "name":"Sensitive",
+    "drawable":"ic_undraw_sensitive",
+    "isChecked":false
+
+  }
+  ]

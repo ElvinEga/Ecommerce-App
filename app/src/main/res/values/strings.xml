@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Amazin</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string-array name="array_banks">
+        <item>Choose Bank</item>
+        <item>EQUITY BANK</item>
+        <item>KCB BANK</item>
+        <item>COOPERATIVE BANK</item>
+        <item>FAMILY BANK</item>
+        <item>CBA BANK</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_remind">Remind me in 5 seconds</string>
+    <string name="menu_fake_add">Add fake data</string>
+    <string name="menu_clear_data">Clear all data?</string>
+
+    <string name="empty_message">You have not added any Budget.\n Go ahead and add some.</string>
+    <string name="empty_goal">You have not added any Goal.\n Go ahead and add some.</string>
+    <string name="empty_message_cards">You have not added any cards.\n Go ahead and add some.</string>
+    <string name="empty_message_send">You have not added any Accounts.\n Go ahead and add some.</string>
+    <string name="empty_message_banks">You have not added any banks.\n Go ahead and add some.</string>
+
+    <string name="ask_expense_delete">Delete this expense?</string>
+    <string name="yes_expense_delete">Yes</string>
+    <string name="no_expense_delete">No</string>
+
+    <string name="create_expense_button">Create</string>
+    <string name="delete_expense_button">Delete</string>
+    <string name="update_expense_button">Update</string>
+    <string name="cancel_expense_button">Cancel</string>
+
+    <string name="expense_form_amount_hint">Amount</string>
+    <string name="expense_form_amount_error">"Please enter a valid amount."</string>
+    <string name="expense_form_category_hint">Category</string>
+    <string name="expense_form_uncategorized">Uncategorized</string>
+    <string name="expense_form_description_hint">Description</string>
+
+    <string name="expense_summary_view_title">Summary</string>
+
+    <string name="notification_title">Hey there!</string>
+    <string name="notification_text">Do not forget to add your expenses.</string>
+
+    <string name="preferences_alarm_key">useAlarm</string>
+    <string name="preferences_alarm_title">Reminder</string>
+    <string name="preferences_alarm_summary">Remind me every night to add my expenses.</string>
+
+
+    <string name="hint_phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="err_msg_phone">Enter your Phone Number</string>
+    <string name="err_msg_phone_valid">Phone not valid</string>
+    <string name="err_msg_password">Enter the Password</string>
+
+
+    <array name="array_circle">
+        <item>@string/square0</item>
+        <item>@string/square1</item>
+        <item>@string/square2</item>
+        <item>@string/square3</item>
+        <item>@string/square4</item>
+        <item>@string/square5</item>
+        <item>@string/square6</item>
+        <item>@string/square7</item>
+        <item>@string/square8</item>
+        <item>@string/square9</item>
+        <item>@string/square10</item>
+    </array>
+
+
+    <string name="square0">e67e22</string>
+    <string name="square1">3498db</string>
+    <string name="square2">e74c3c</string>
+    <string name="square3">9b59b6</string>
+    <string name="square4">f1c40f</string>
+    <string name="square5">1abc9c</string>
+    <string name="square6">e84393</string>
+    <string name="square7">16a085</string>
+    <string name="square8">e84393</string>
+    <string name="square9">2d3436</string>
+    <string name="square10">78e08f</string>
+</resources>

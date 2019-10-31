@@ -1,0 +1,25 @@
+[
+  {
+    "name":"CRAZY WOMEN'S",
+    "description":"With Hiphop Style upto 20% Off",
+    "image":"slide_1"
+  },
+  {
+    "name":"CLASSIC CONVERSE",
+    "description":"Trendy Summer sales",
+    "image":"slide_2"
+  },
+  {
+    "name":"New Arrivals",
+    "description":"Upto 20% Discount",
+    "image":"slide_3"
+  },
+  {
+    "name":"Spring Season",
+    "description":"New Women Collection",
+    "image":"slide_4"
+  }
+
+]
+
+

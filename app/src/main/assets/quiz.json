@@ -1,0 +1,34 @@
+[
+  {
+    "id":1,
+    "name":"I like to be casual and down to earth, I love comfort and easy to care for clothes",
+    "drawable":"ic_undraw_casual",
+    "isChecked":false
+
+  },
+  {
+    "id":2,
+    "name":"I am organised and practical and prefer to fill my wardrobe with versatile investment pieces.",
+    "drawable":"ic_undraw_professional",
+    "isChecked":false
+  },
+  {
+    "id":3,
+    "name":"I am spirited and self expressed and originality is key.",
+    "drawable":"ic_undraw_sophisticated",
+    "isChecked":false
+  },
+  {
+    "id": 4,
+    "name": "I am bold and like to stand out in a crowd and wear striking clothes that make a statement",
+    "drawable": "ic_undraw_bold",
+    "isChecked": false
+  },
+  {
+    "id":5,
+    "name":"I am sensitive, gentle and supportive and love feminine details such as lace, gathers and frills",
+    "drawable":"ic_undraw_sensitive",
+    "isChecked":false
+
+  }
+  ]

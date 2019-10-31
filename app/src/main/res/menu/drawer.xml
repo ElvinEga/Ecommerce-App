@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/SingleSwipe"
+            android:checked="false"
+            android:title="single_swipe" />
+
+        <item
+            android:id="@+id/SingleSwipeNotAutoAnimation"
+            android:checked="false"
+            android:title="single_swipe_not_anim" />
+
+        <item
+            android:id="@+id/CreditCard"
+            android:checked="false"
+            android:title="credit_card" />
+
+        <item
+            android:id="@+id/CustomSwipe"
+            android:checked="false"
+            android:title="custom_swipe" />
+
+        <item
+            android:id="@+id/RecyclerSwipe"
+            android:checked="false"
+            android:title="recycler_swipe" />
+
+
+        <item
+            android:id="@+id/DismissSwipe"
+            android:checked="false"
+            android:title="dismiss_swipe" />
+
+        <item
+            android:id="@+id/OtherSwipe"
+            android:checked="false"
+            android:title="other_swipe" />
+
+        <item
+            android:id="@+id/MapSwipe"
+            android:checked="false"
+            android:title="map_swipe" />
+
+    </group>
+
+
+
+
+</menu>

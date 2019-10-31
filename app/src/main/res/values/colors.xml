@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A44FF</color>
+    <color name="colorPrimaryDark">#2A44FF</color>
+    <color name="colorAccent">#00D45C</color>
+    <color name="colorSecondary">#fdb53c</color>
+
+    <color name="colorTransparent">#00ff4081</color>
+
+    <color name="colorToolBar">#d41d1e30</color>
+
+    <color name="bg_row_background">#fa315b</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+
+    <color name="colorBackground">#fafafa</color>
+    <color name="colorSurface">#a9a9a9</color>
+    <color name="colorError">#a9a9a9</color>
+
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorOnError">#ffffff</color>
+
+
+    <color name="txt_hint">#5bffffff</color>
+    <color name="bg_faded">#EAEDF4</color>
+
+    <!-- colors -->
+    <color name="green">#00D45C</color>
+    <color name="red">#ea495f</color>
+    <color name="yellow">#f8d64e</color>
+    <color name="light_green">#1bac94</color>
+    <color name="blue">#2980b9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="plus">#12b6ad</color>
+
+
+    <color name="backgroundColor">#eff9ff</color>
+    <color name="backgroundHeaderColor">#bde7ff</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#5684E7</color>
+
+    <color name="square0">#6cbf46</color>
+    <color name="square1">#027BFF</color>
+    <color name="square2">#f1c40f</color>
+    <color name="square3">#7e2a88</color>
+    <color name="square4">#3954a5</color>
+    <color name="square5">#ec4224</color>
+    <color name="square6">#d41d1e30</color>
+    <color name="square7">#16a085</color>
+    <color name="square8">#e84393</color>
+    <color name="square9">#2d3436</color>
+    <color name="square10">#78e08f</color>
+    <color name="square11">#00D45C</color>
+    <color name="square12">#ea495f</color>
+    <color name="square13">#f8d64e</color>
+    <color name="square14">#1bac94</color>
+    <color name="square15">#fa315b</color>
+    <color name="square16">#fdb53c</color>
+    <color name="square17">#d41d1e</color>
+    <color name="square18">#00ff4081</color>
+    <color name="square19">#C4FFFFFF</color>
+
+    <array name="array_rainbow">
+        <item>@color/square0</item>
+        <item>@color/square1</item>
+        <item>@color/square2</item>
+        <item>@color/square3</item>
+        <item>@color/square4</item>
+        <item>@color/square5</item>
+        <item>@color/square6</item>
+        <item>@color/square7</item>
+        <item>@color/square8</item>
+        <item>@color/square9</item>
+        <item>@color/square11</item>
+        <item>@color/square12</item>
+        <item>@color/square13</item>
+        <item>@color/square14</item>
+        <item>@color/square15</item>
+        <item>@color/square16</item>
+        <item>@color/square17</item>
+        <item>@color/square18</item>
+        <item>@color/square19</item>
+    </array>
+
+    <color name="transparent_bg">#2affffff</color>
+
+    <color name="textHint">#82858a</color>
+    <color name="textHintDark">#86909a</color>
+    <color name="textLabel">#58647d</color>
+    <color name="textLabelLight">#595c6d</color>
+    <color name="textLabelDark">#284154</color>
+    <color name="textLabelBlue">#2c3e50</color>
+    <color name="textLabelFaded">#C7FFFFFF</color>
+    <color name="iconTint">#5f6267</color>
+
+    <color name="textTitle">#212224</color>
+    <color name="textSubTitle">#868E96</color>
+    <color name="textSearchHint">#DADADA</color>
+    <color name="strokeColor">#EAECED</color>
+
+    <color name="dot_inactive">#3315B4F1</color>
+</resources>

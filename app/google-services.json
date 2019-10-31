@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "556572325570",
+    "firebase_url": "https://amazin-cbafa.firebaseio.com",
+    "project_id": "amazin-cbafa",
+    "storage_bucket": "amazin-cbafa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556572325570:android:7a56a1da7e61b2e4",
+        "android_client_info": {
+          "package_name": "com.twisac.apps.amazin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556572325570-raeo1gk2oc5t28d2uopc3pgtfgbo9t4o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twisac.apps.amazin",
+            "certificate_hash": "aac7fa20dbe392fff9d7a47a88c6e2c2577cead3"
+          }
+        },
+        {
+          "client_id": "556572325570-lk7dd3g5mv801q5ea16tdq647uq5ahvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdBFJ9Li91SGqdk_MzGNNEg3w3fY9MxEM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556572325570-lk7dd3g5mv801q5ea16tdq647uq5ahvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

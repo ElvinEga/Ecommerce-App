@@ -1,0 +1,63 @@
+[
+  {
+    "id":1,
+    "name":"Cotton Bermuda Shorts",
+    "description":"This pair of cotton shorts with a vertical striped print has front slanted pockets and an elasticized waist for pull-on styling.",
+    "size":"s",
+    "price":200,
+    "whishlist":false,
+    "image":"female_1"
+
+  },
+  {
+    "id":2,
+    "name":"Chenille Sweater Dress",
+    "description":"A chenille knit sweater dress featuring a V-neck, long sleeves, and ribbed trim.",
+    "size":"s",
+    "price":560,
+    "whishlist":false,
+    "image":"female_2"
+
+  },
+  {
+    "id":3,
+    "name":"Seude Stiletto High Heels",
+    "description":"A pair of super-soft faux suede high heels with an open toe, buckled ankle strap, and a stiletto high heel.",
+    "size":"s",
+    "price":"2400",
+    "whishlist":true,
+    "image":"female_3"
+
+  },
+  {
+    "id":4,
+    "name":"Cotton-Jersey Crop Top",
+    "description":"A textured ribbed knit top with a round neckline, dropped shoulders, long sleeves, and a cropped hem.",
+    "size":"s",
+    "price":1700,
+    "whishlist":false,
+    "image":"female_4"
+
+  },
+  {
+    "id":5,
+    "name":"Mini Leather backpack ",
+    "description":"A faux suede mini backpack featuring a flap top with a magnetic closure and O-ring accent, top handle, and adjustable shoulder straps.",
+    "size":"s",
+    "price":3325,
+    "whishlist":true,
+    "image":"female_5"
+
+  },
+  {
+    "id":6,
+    "name":"Empire-Waist Midi Dress",
+    "description":"Style Deals - A simple knit midi dress featuring a deep V-neckline, empire waist seam, long sleeves, and a bodycon silhouette.",
+    "size":"s",
+    "price":999,
+    "whishlist":false,
+    "image":"female_6"
+
+  }
+
+]

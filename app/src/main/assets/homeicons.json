@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Send Money",
+    "icon":"ic_home_smartphone"
+
+  },
+  {
+    "name":"Receive Money",
+    "icon":"ic_home_pay"
+
+  },
+  {
+    "name":"Budget",
+    "icon":"ic_home_budget"
+
+  },
+  {
+  "name":"My Wallet",
+  "icon":"ic_home_wallet"
+
+  }
+  ]
