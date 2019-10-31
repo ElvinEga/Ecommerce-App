@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name="com.twisac.apps.amazin.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,6 +21,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".CartActivity"></activity>
+
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_logo" />
@@ -28,7 +30,6 @@
              Set color used with incoming notification messages. This is used when no color is set for the incoming
              notification message. See README(https://goo.gl/6BKBk7) for more.
         -->
-
         <meta-data
             android:name="AA_MODELS"
             android:value="com.twisac.apps.amazin.datastore.models.Bank, com.twisac.apps.amazin.datastore.models.Card" />
@@ -39,25 +40,24 @@
             android:name="AA_DB_VERSION"
             android:value="2" />
 
-        <activity android:name="com.twisac.apps.amazin.SplashScreenActivity">
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.twisac.apps.amazin.WelcomeActivity" />
-        <activity android:name="com.twisac.apps.amazin.LoginActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".LoginActivity" />
         <activity
-            android:name="com.twisac.apps.amazin.RegisterActivity"
+            android:name=".RegisterActivity"
             android:label="Sign Up"
-            android:parentActivityName="com.twisac.apps.amazin.LoginActivity" />
+            android:parentActivityName=".LoginActivity" />
         <activity android:name=".QuizActivity" />
-        <activity android:name=".MainActivity"
-            />
-        <activity android:name=".ProductActivity"
-            android:parentActivityName=".MainActivity"/>
-            />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ProductActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
