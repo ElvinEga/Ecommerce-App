@@ -1,13 +1,10 @@
 
 # E-commerce App
 
-
-Intro
 ------
 This Ecommerce app was developed using kotlin. To run ensure to install all dependancies.
 =======
-#
-Getting Started
+#Getting Started
 
 This is documentation for Amazin mobile application.This document contains structure and layout of the application.It offers instructions for setting up and developing the E-commerce application.This document contains code snippets from the application project and simple explanations.
 
@@ -15,8 +12,7 @@ To get started you are required to pull the application android files from githu
 
 To start developing you have to make sure you have meet the requirements and specification for developing and running the application.
 
-#
-## SDK SETUP {#sdk-setup}
+### SDK SETUP {#sdk-setup}
 
 ---
 
@@ -35,8 +31,7 @@ The Android Development Tools \(ADT\) Bundle includes everything needed to begin
 * Latest Android Platform
 * Latest System Image for Emulator
 
-#
-# Setting up your Android Studio Project {#setting-up-your-android-studio-project}
+## Setting up your Android Studio Project {#setting-up-your-android-studio-project}
 
 ---
 
@@ -44,8 +39,7 @@ For an existing app:
 
 1. Open the **build.gradle **file inside your application module directory. Android Studio projects contain a top level **build.gradle **file and a **build.gradle **for each module. Make sure to edit the file for your application module.
 
-#
-# Project Structure {#project_structure}
+## Project Structure {#project_structure}
 
 ---
 
@@ -68,7 +62,6 @@ file.
 * **res**
 : Contains all non-code resources, such as XML layouts, UI strings, and bitmap images.
 
-![](/assets/structure2.png)
 
 ---
 
@@ -94,13 +87,11 @@ This contains database classes object and class objects \(POJO\) used in api res
 
 This contains the network services for the project.Contains URL links and end points that are called to servers.
 
-![](/assets/structure.png)
 
 ---
 
 #### Res Package Structure
 
-![](/assets/res.png)
 
 **color**
 
