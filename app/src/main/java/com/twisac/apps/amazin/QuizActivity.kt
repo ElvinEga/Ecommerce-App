@@ -2,10 +2,10 @@ package com.twisac.apps.amazin
 
 import android.graphics.Color
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
@@ -34,7 +34,7 @@ class QuizActivity : AppCompatActivity() {
         val fragment3 =  QuizFragment()
         val fragment4 =  MeasurmentFragment()
         val fm = supportFragmentManager
-        var active : Fragment = fragment1
+        var active : androidx.fragment.app.Fragment = fragment1
         fm.beginTransaction().add(R.id.frame_layout, fragment4, "4").hide(fragment4).commit()
         fm.beginTransaction().add(R.id.frame_layout, fragment3, "3").hide(fragment3).commit()
         fm.beginTransaction().add(R.id.frame_layout, fragment2, "2").hide(fragment2).commit()

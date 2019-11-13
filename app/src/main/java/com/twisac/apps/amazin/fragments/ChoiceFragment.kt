@@ -2,8 +2,8 @@ package com.twisac.apps.amazin.fragments
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.GridLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,7 +23,7 @@ import java.io.IOException
 /**
  * A simple [Fragment] subclass.
  */
-class ChoiceFragment : Fragment(), IReloadContrib
+class ChoiceFragment : androidx.fragment.app.Fragment(), IReloadContrib
 
 {
     private var countCoice = 0
@@ -38,7 +38,7 @@ class ChoiceFragment : Fragment(), IReloadContrib
 
         val choiceAdapter = ChoiceAdapter(activity!!.applicationContext, choiceList,this)
         rootView.rv_choice.setHasFixedSize(true)
-        rootView.rv_choice.layoutManager = GridLayoutManager(activity, 2)
+        rootView.rv_choice.layoutManager = androidx.recyclerview.widget.GridLayoutManager(activity, 2)
         val animationController2 = AnimationUtils.loadLayoutAnimation(activity, R.anim.layout_slide_from_bottom)
         rootView.rv_choice.layoutAnimation = animationController2
 

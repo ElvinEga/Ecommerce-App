@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space10">
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button"
                 app:cornerRadius="20dp"
                 android:id="@+id/btn_next"
@@ -44,7 +44,7 @@
                 android:layout_marginEnd="@dimen/space20"
                 app:backgroundTint="@color/green" android:layout_marginRight="0dp"/>
 
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:id="@+id/btn_skip"
                 android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                 />
         </RelativeLayout>
     </LinearLayout>
-    <android.support.v4.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:layout_above="@id/navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

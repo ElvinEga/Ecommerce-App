@@ -12,7 +12,7 @@
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:layout_marginLeft="@dimen/space40"/>
 
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="320dp"
             android:layout_centerInParent="true"
@@ -50,7 +50,7 @@
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal">
 
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:id="@+id/btn_log_in"
                 android:layout_marginTop="20dp"
@@ -61,7 +61,7 @@
                 android:textSize="@dimen/txt22"
                 android:textColor="@color/colorSecondary"
                 />
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
                 android:id="@+id/btn_sign_up"
                 android:layout_width="match_parent"
@@ -135,7 +135,7 @@
                     android:layout_marginBottom="8dp"
                     android:visibility="gone"/>
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_sign_up_logo"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
@@ -147,12 +147,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:paddingBottom="@dimen/space20">
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColorHint="@color/textHint">
-                        <android.support.v7.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/et_username"
                             android:maxLines="1"
                             android:singleLine="true"
@@ -168,7 +168,7 @@
                             android:inputType="textEmailAddress"
 
                             />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -177,13 +177,13 @@
                     android:paddingBottom="@dimen/space5"
                     android:layout_marginBottom="@dimen/space20">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:passwordToggleEnabled="true"
                         android:textColorHint="@color/textHint">
-                        <android.support.v7.widget.AppCompatEditText
+                        <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -196,14 +196,14 @@
                             android:inputType="textPassword"
                             android:lines="1"
                             />
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/ll_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <android.support.design.button.MaterialButton
+                    <com.google.android.material.button.MaterialButton
                         style="@style/Widget.MaterialComponents.Button"
                         android:id="@+id/email_sign_in_button"
                         android:layout_width="@dimen/btn_width"
@@ -231,7 +231,7 @@
                         android:textStyle="normal"
                         android:textColor="@color/textHint"
                         android:gravity="center_horizontal"/>
-                    <android.support.v7.widget.AppCompatTextView
+                    <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tv_register"
                         android:textSize="21sp"
                         android:textColor="@color/green"

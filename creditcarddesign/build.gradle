@@ -21,8 +21,8 @@ android {
 dependencies {
    // final SUPPORT_VERSION = "25.0.1"
  //   compile fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "com.android.support:appcompat-v7:${project.ext.mySupportLibraryVersion}"
-    implementation "com.android.support:cardview-v7:${project.ext.mySupportLibraryVersion}"
+    implementation "androidx.appcompat:appcompat:1.0.0"
+    implementation "androidx.cardview:cardview:1.0.0"
    // compile 'com.github.ozodrukh:CircularReveal:1.0.5'
     implementation 'com.github.ozodrukh:CircularReveal:1.3.1@aar'
 }

@@ -1,12 +1,12 @@
 package com.twisac.apps.amazin
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.AppBarLayout
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
+import com.google.android.material.appbar.AppBarLayout
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.animation.AnimationUtils
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         val headerAdapter = HeaderAdapter(this, slides)
         rv_top.setHasFixedSize(true)
         rv_top.layoutManager =
-                LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
+                androidx.recyclerview.widget.LinearLayoutManager(this@MainActivity, androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL, false)
 
         val animationController = AnimationUtils.loadLayoutAnimation(this@MainActivity, R.anim.layout_slide_from_right)
         rv_top.layoutAnimation = animationController
@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
         val homeAdapter = HomeAdapter(this, products)
         rv_home.setHasFixedSize(true)
-        rv_home.layoutManager = GridLayoutManager(this@MainActivity, 2)
+        rv_home.layoutManager = androidx.recyclerview.widget.GridLayoutManager(this@MainActivity, 2)
 
         val animationController2 = AnimationUtils.loadLayoutAnimation(this@MainActivity, R.anim.layout_slide_from_bottom)
         rv_home.layoutAnimation = animationController2

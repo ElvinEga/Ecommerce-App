@@ -8,7 +8,7 @@ package com.twisac.apps.amazin
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.animation.AnimationUtils
 import com.twisac.apps.amazin.component.SessionManager
 import kotlinx.android.synthetic.main.activity_splash_screen.*

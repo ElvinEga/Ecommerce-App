@@ -3,7 +3,7 @@ package com.twisac.apps.amazin
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.annotation.TargetApi
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Build
 import android.os.Bundle
 import android.text.TextUtils

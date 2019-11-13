@@ -2,9 +2,9 @@ package com.twisac.apps.amazin.fragments
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,7 +24,7 @@ import java.io.IOException
 /**
  * A simple [Fragment] subclass.
  */
-class QuizFragment : Fragment(), IReloadContrib
+class QuizFragment : androidx.fragment.app.Fragment(), IReloadContrib
 
 {
     private var countCoice = 0
@@ -43,7 +43,7 @@ class QuizFragment : Fragment(), IReloadContrib
 
         val quizAdapter = QuizAdapter(activity!!.applicationContext, choiceList,this)
         rootView.rv_quiz.setHasFixedSize(true)
-        rootView.rv_quiz.layoutManager =  ( LinearLayoutManager(activity!!.applicationContext))
+        rootView.rv_quiz.layoutManager =  (androidx.recyclerview.widget.LinearLayoutManager(activity!!.applicationContext))
         val animationController2 = AnimationUtils.loadLayoutAnimation(activity, R.anim.layout_slide_from_bottom)
         rootView.rv_quiz.layoutAnimation = animationController2
 

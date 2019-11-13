@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +21,7 @@
                 android:background="@color/colorPrimaryDark"
                 android:orientation="vertical"
         >
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_back"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
 
                     android:textSize="18sp"
                     android:gravity="center"/>
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_cart"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
 
 
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/iv_thumbnail"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
@@ -169,7 +169,7 @@
                     android:text="Description"
                     android:textColor="@color/textHint"
                     />
-                <android.support.design.button.MaterialButton
+                <com.google.android.material.button.MaterialButton
                     style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
                     android:id="@+id/btn_next"
                     android:layout_width="@dimen/btn_width"
@@ -189,4 +189,4 @@
 
 
     </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

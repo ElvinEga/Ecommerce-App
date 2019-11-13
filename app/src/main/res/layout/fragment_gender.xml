@@ -1,4 +1,4 @@
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -55,7 +55,7 @@
             android:layout_marginTop="@dimen/space20"
             android:weightSum="2"
             android:orientation="horizontal">
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cv_male"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -72,8 +72,8 @@
                         android:paddingBottom="55dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_short_beard"/>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:id="@+id/cv_female"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -89,7 +89,7 @@
                 android:paddingBottom="55dp"
                 android:scaleX="-1"
                 app:srcCompat="@drawable/ic_long"/>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
                     <TextView
                         android:id="@+id/listview_empty_message"
@@ -105,7 +105,7 @@
                         android:orientation="horizontal"
                         android:layout_margin="20dp"
                         android:weightSum="2">
-                        <android.support.design.button.MaterialButton
+                        <com.google.android.material.button.MaterialButton
                             style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                             android:id="@+id/btn_male"
                             android:layout_width="200dp"
@@ -121,7 +121,7 @@
                             app:strokeColor="@color/textLabel"
                             app:iconTint="@color/textHint"
                             android:layout_marginBottom="@dimen/space10"/>
-                        <android.support.design.button.MaterialButton
+                        <com.google.android.material.button.MaterialButton
                             style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                             android:id="@+id/btn_female"
                             android:layout_width="200dp"
@@ -143,6 +143,6 @@
 
     </RelativeLayout>
     </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

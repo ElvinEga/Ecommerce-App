@@ -25,7 +25,7 @@
                     android:textColor="@color/white"
                     android:layout_marginBottom="@dimen/space10"
                     android:layout_marginTop = "@dimen/space10"/>
-            <android.support.v7.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/space20"
@@ -42,7 +42,7 @@
             android:layout_above="@id/welcomeInfo"
             android:gravity="center"
             android:padding="@dimen/space20">
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_get_started"/>

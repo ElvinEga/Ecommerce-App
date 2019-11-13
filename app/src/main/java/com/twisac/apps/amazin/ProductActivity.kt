@@ -1,7 +1,7 @@
 package com.twisac.apps.amazin
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_product.*
 

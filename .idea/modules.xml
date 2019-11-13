@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Amazin.iml" filepath="$PROJECT_DIR$/Amazin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ecommerce-App.iml" filepath="$PROJECT_DIR$/Ecommerce-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Ecommerce-App-app.iml" filepath="$PROJECT_DIR$/app/Ecommerce-App-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creditcarddesign/Ecommerce-App-creditcarddesign.iml" filepath="$PROJECT_DIR$/creditcarddesign/Ecommerce-App-creditcarddesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweetalert/Ecommerce-App-sweetalert.iml" filepath="$PROJECT_DIR$/sweetalert/Ecommerce-App-sweetalert.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/creditcarddesign/creditcarddesign.iml" filepath="$PROJECT_DIR$/creditcarddesign/creditcarddesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/sweetalert/sweetalert.iml" filepath="$PROJECT_DIR$/sweetalert/sweetalert.iml" />

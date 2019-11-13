@@ -2,8 +2,8 @@ package com.twisac.apps.amazin.adapters;
 
 import android.app.Activity
 import android.content.Context
-import android.support.annotation.LayoutRes
-import android.support.v7.widget.RecyclerView
+import androidx.annotation.LayoutRes
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,13 +15,13 @@ import kotlinx.android.synthetic.main.item_slider.view.*
 
 
 class HeaderAdapter(internal var context: Context, private val mHeaders: MutableList<Slide>)//super(context, resource, objects);
-    : RecyclerView.Adapter<HeaderAdapter.ViewHolder>() {
+    : androidx.recyclerview.widget.RecyclerView.Adapter<HeaderAdapter.ViewHolder>() {
     fun clear() {
         mHeaders.clear()
         notifyDataSetChanged()
     }
 
-    class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
+    class ViewHolder(v: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(v) {
         // each data item is just a string in this case
         var headerImage: ImageView = v.header_image
         var txtTitle: TextView = v.txtTitle

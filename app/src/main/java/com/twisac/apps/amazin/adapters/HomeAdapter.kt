@@ -3,8 +3,8 @@ package com.twisac.apps.amazin.adapters;
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.support.annotation.LayoutRes
-import android.support.v7.widget.RecyclerView
+import androidx.annotation.LayoutRes
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,14 +18,14 @@ import kotlinx.android.synthetic.main.item_product.view.*
 
 
 class HomeAdapter(internal var context: Context, private val mHeaders: MutableList<Product>)//super(context, resource, objects);
-    : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+    : androidx.recyclerview.widget.RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
     var lastPosition = -1
     fun clear() {
         mHeaders.clear()
         notifyDataSetChanged()
     }
 
-    class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
+    class ViewHolder(v: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(v) {
         // each data item is just a string in this case
         var iv_thumbnail: ImageView = v.iv_thumbnail
         var tv_name: TextView = v.tv_name
